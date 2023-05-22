@@ -2,52 +2,52 @@
 import math
 
 
-# def panel_calc(room_width, room_length, panel_width, panel_length, pack_number):
-#    room_surface = room_width * room_length
-#    room_surface += room_surface * 0.1
-#    panel_surface = panel_width * panel_length
-#    amount_of_panels = room_surface / panel_surface
-#    amount_of_packets = amount_of_panels // pack_number
-#    if amount_of_panels % pack_number > 0:
-#        amount_of_packets += 1
-#    return amount_of_packets
-#
-#
-# dlPodloga = input("Podaj długość podłogi")
-# dlPodloga = float(dlPodloga)
-#
-# szPodloga = input("Podaj szerokość podłogi")
-# szPodloga = float(szPodloga)
-#
-# dlPanel = input("Podaj dlugość panelu")
-# dlPanel = float(dlPanel)
-#
-# szPanel = input("Podaj szerokość panelu")
-# szPanel = float(szPanel)
-#
-# ilPaczka = input("Podaj ilość paneli w paczce")
-# ilPaczka = float(ilPaczka)
-#
-# print(panel_calc(dlPodloga, szPodloga, dlPanel, szPanel, ilPaczka))
+def panel_calc(room_width, room_length, panel_width, panel_length, pack_number):
+   room_surface = room_width * room_length
+   room_surface += room_surface * 0.1
+   panel_surface = panel_width * panel_length
+   amount_of_panels = room_surface / panel_surface
+   amount_of_packets = amount_of_panels // pack_number
+   if amount_of_panels % pack_number > 0:
+       amount_of_packets += 1
+   return amount_of_packets
 
 
-# Zad2
+dlPodloga = input("Podaj długość podłogi")
+dlPodloga = float(dlPodloga)
 
-# def prime(*numbers):
-#    for n in numbers:
-#        if n == 0 or n == 1:
-#            print(n, "is not a prime number")
-#        else:
-#
-#            for i in (2, math.sqrt(n) + 1):
-#                if n % i == 0:
-#                    print(n, "is not a prime number")
-#                    break
-#            else:
-#                print(n, "is a prime number")
-#
-#
-# prime(0, 1, 2, 3, 4, 5, 6)
+szPodloga = input("Podaj szerokość podłogi")
+szPodloga = float(szPodloga)
+
+dlPanel = input("Podaj dlugość panelu")
+dlPanel = float(dlPanel)
+
+szPanel = input("Podaj szerokość panelu")
+szPanel = float(szPanel)
+
+ilPaczka = input("Podaj ilość paneli w paczce")
+ilPaczka = float(ilPaczka)
+
+print(panel_calc(dlPodloga, szPodloga, dlPanel, szPanel, ilPaczka))
+
+
+# zad2
+
+def prime(*numbers):
+   for n in numbers:
+       if n == 0 or n == 1:
+           print(n, "is not a prime number")
+       else:
+
+           for i in (2, math.sqrt(n) + 1):
+               if n % i == 0:
+                   print(n, "is not a prime number")
+                   break
+           else:
+               print(n, "is a prime number")
+
+
+prime(0, 1, 2, 3, 4, 5, 6)
 
 # Zad3
 
